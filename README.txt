@@ -11,4 +11,4 @@ same password for 3 test users (user1,user2,user3)
 
 deployment site:
 
-https://djangomessaging.herokuapp.com
+https://djangomessaging.herokuapp.com/admin
