@@ -8,3 +8,7 @@ username: admin
 password: Aa1234567
 
 same password for 3 test users (user1,user2,user3)
+
+deployment site:
+
+https://djangomessaging.herokuapp.com
