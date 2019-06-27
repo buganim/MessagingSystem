@@ -5,7 +5,6 @@ from django.db import models
 
 
 class Message(models.Model):
-    id = models.IntegerField(primary_key=True)
     sender = models.CharField(max_length=30)
     receiver = models.CharField(max_length=30)
     subject = models.CharField(max_length=50)
