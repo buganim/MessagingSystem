@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "6b03e69e-596c-47a5-814f-c82faff01604",
+		"name": "djangomessaging",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Write Message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://djangomessaging.herokuapp.com/write?receiver=user3&subject=hey&content=how are you&username=user1&password=Aa1234567",
+					"protocol": "https",
+					"host": [
+						"djangomessaging",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"write"
+					],
+					"query": [
+						{
+							"key": "receiver",
+							"value": "user3"
+						},
+						{
+							"key": "subject",
+							"value": "hey"
+						},
+						{
+							"key": "content",
+							"value": "how are you"
+						},
+						{
+							"key": "username",
+							"value": "user1"
+						},
+						{
+							"key": "password",
+							"value": "Aa1234567"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://djangomessaging.herokuapp.com/delete?username=user1&password=Aa1234567&id=1",
+					"protocol": "https",
+					"host": [
+						"djangomessaging",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"delete"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "user1"
+						},
+						{
+							"key": "password",
+							"value": "Aa1234567"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Message",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://djangomessaging.herokuapp.com/read?username=user3&password=Aa1234567",
+					"protocol": "https",
+					"host": [
+						"djangomessaging",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"read"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "user3"
+						},
+						{
+							"key": "password",
+							"value": "Aa1234567"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Messages for User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://djangomessaging.herokuapp.com/getall?username=user1&password=Aa1234567",
+					"protocol": "https",
+					"host": [
+						"djangomessaging",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"getall"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "user1"
+						},
+						{
+							"key": "password",
+							"value": "Aa1234567"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Unread messages for User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://djangomessaging.herokuapp.com/getunread?username=user3&password=Aa1234567",
+					"protocol": "https",
+					"host": [
+						"djangomessaging",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"getunread"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "user3"
+						},
+						{
+							"key": "password",
+							"value": "Aa1234567"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
